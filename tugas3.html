@@ -1,0 +1,36 @@
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.6.0.min.js"> </script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+	$("#tombol_fade_out").click(function(){
+		$("#kotak").fadeOut("slow")
+	});
+	$("#tombol_fade_in").click(function(){
+		$("#kotak").fadeIn("fast")
+	});
+	$("#tombol_fade_to").click(function(){
+		$("#kotak").fadeTo("slow", 0.3)
+	});
+	});
+	</script>
+	<style type="text/css">
+	#kotak {
+		width: 300px;
+		height: 150px;
+		background: yellow;
+		border: 3px solid black;
+		padding: 10px;
+	}
+
+</style>
+</head>
+<body>
+<div id="kotak"> </div>
+<br>
+<input type="button" name="button1" value="fadeOut" id="tombol_fade_out">
+<input type="button" name="button2" value="fadeIn" id="tombol_fade_in">
+<input type="button" name="button3" Value ="fade to 0.3" id="tombol_fade_to" >
+
+</body>
+</html>
